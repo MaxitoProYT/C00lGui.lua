@@ -1,0 +1,11 @@
+script.Parent.MouseButton1Click:Connect(function()
+	for _, v in pairs(game.Players:GetPlayers()) do
+		if v then
+			for _, i in pairs(v.PlayerGui:GetChildren()) do
+				if i.Name == "Hint" and i:IsA("Hint") then
+					i:Destroy()
+				end
+			end
+		end
+	end
+end)
