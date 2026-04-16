@@ -1,0 +1,8 @@
+script.Parent.MouseButton1Click:Connect(function()
+	for i, v in pairs(game.Workspace:GetDescendants()) do
+		if v:IsA("Part") or v:IsA("Model") then
+			local effect = Instance.new("Fire")
+			effect.Parent = v
+		end
+	end
+end)
