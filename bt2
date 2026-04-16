@@ -1,0 +1,7 @@
+script.Parent.MouseButton1Click:Connect(function()
+	for i, v in pairs(game.Workspace:GetDescendants()) do
+		if v:IsA("BasePart") then
+			v.Anchored = false
+		end
+	end
+end)
