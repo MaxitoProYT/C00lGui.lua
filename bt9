@@ -1,0 +1,12 @@
+script.Parent.MouseButton1Click:Connect(function()
+	for i, v in pairs(game.Players:GetPlayers()) do
+		if v then
+			if v ~= script.Parent.Parent.Parent.Parent.Parent.Parent.Parent then
+				local char = v.Character or v.CharacterAdded:Wait()
+				if char then
+					char:WaitForChild("Humanoid").Health = 0
+				end
+			end
+		end
+	end
+end)
