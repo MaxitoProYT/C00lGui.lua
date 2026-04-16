@@ -1,0 +1,16 @@
+script.Parent.MouseButton1Click:Connect(function()
+	local message = Instance.new("Hint")
+	message.Parent = script.Parent.Parent.Parent.Parent.Parent.Parent
+	while true do
+		message.Text = "Now I'm your owner"
+		wait(5)	
+		message.Text = "Bypassing all server accounts"
+		wait(5)	
+		message.Text = "Bypassed Succesfull"
+		wait(5)	
+		message.Text = "Have fun here nuvs"
+		wait(5)	
+		message.Text = "Don't use uncopylockeds next time, lol hahahaha"
+		wait(5)	
+	end
+end)
