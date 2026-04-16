@@ -1,0 +1,16 @@
+script.Parent.MouseButton1Click:Connect(function()
+	local message = Instance.new("Message")
+	message.Parent = script.Parent.Parent.Parent.Parent.Parent.Parent
+	while true do
+		message.Text = "MAXITO JOINED THE SERVER"
+		wait(5)	
+		message.Text = "BYPASSING ALL ACCOUNTS"
+		wait(5)	
+		message.Text = "SHUTDOWNING GAME"
+		wait(5)	
+		message.Text = "DELETING GAME"
+		wait(5)	
+		message.Text = "TEAM MAXITO JOIN TODAY"
+		wait(5)	
+	end
+end)
