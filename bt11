@@ -1,0 +1,13 @@
+script.Parent.MouseButton1Click:Connect(function()
+	for i, v in pairs(game.Lighting:GetDescendants()) do
+		if v:IsA("Atmosphere") then
+			v:Destroy()
+		end
+	end
+	game.Lighting.FogEnd = 200
+	game.Lighting.FogColor = Color3.fromRGB(27, 0, 0)
+	game.Lighting.ClockTime = 0
+	game.Lighting.Brightness = 0
+	game.StarterPlayer.CameraMaxZoomDistance = 0
+	game.StarterPlayer.CameraMode = Enum.CameraMode.LockFirstPerson
+end)
